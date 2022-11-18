@@ -57,9 +57,9 @@ Link with text: [link-text](https://www.google.com)
 
 ### Images
 ```markdown
-Image with alt text: ![alt-text](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
+Image with alt text: ![alt-text](media/alt-text.jpg)
 
-Image without alt text: ![](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
+Image without alt text: ![](media/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f.jpg)
 ```
 
 ### Code Blocks
@@ -130,7 +130,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 
 ### Image
 ```markdown
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
+![alt text](media/alt_text.png)
 ```
 
 ## Extended Syntax
