@@ -57,3 +57,11 @@ origin  https://github.com/anishkumar127/brain-notes.git (push)
 do again this cmd 
 >git push --set-upstream origin main
 
+that's it.
+now just so normal process which we do everyday.
+> git add .
+> git commit -m "something"
+> git push
+
+
+
