@@ -50,3 +50,10 @@ origin  https://github.com/anishkumar127/brain-notes.git (push)
 
 - its ok when u are tying to create fresh repo. but u have already ur repo before then don't use this ever. it will broken ur entire repo.
 
+
+
+> but after that next push it will also not work. so what we can do now ?
+
+do again this cmd 
+>git push --set-upstream origin main
+
