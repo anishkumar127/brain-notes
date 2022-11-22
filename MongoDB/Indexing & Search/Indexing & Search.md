@@ -45,6 +45,10 @@ db.movies.aggregate([
 ```
 ![[Pasted image 20221120174049.png]]
 
+
+
+
+
 The first stage of this aggregation pipeline will return all documents in the `movies` collection that contain the word "star" or "wars" in the `title` field.
 
 The second stage will project the `title` and `year` fields from each document.
