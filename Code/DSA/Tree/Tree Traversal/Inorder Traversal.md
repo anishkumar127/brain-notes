@@ -1,10 +1,4 @@
 
-![](https://i.imgur.com/dkx6rqV.png)
-
-
-
-![](https://i.imgur.com/JpGBMcD.png)
-
 ## Inorder Traversal With Recursion
 
 In inorder the flow of traversing will be left_subtree -> current -> right_subtree.
