@@ -105,3 +105,18 @@ public class TUF {
 
 }
 ```
+
+
+**Output:**
+
+The postOrder Traversal is : 4 8 5 2 6 9 10 7 3 1 
+
+**Time Complexity: O(N)**.
+
+Reason: We are traversing N nodes and every node is visited exactly once.
+
+**Space Complexity: O(N)**
+
+Reason: Space is needed for the recursion stack. In the worst case (skewed tree), space complexity can be O(N).
+
+

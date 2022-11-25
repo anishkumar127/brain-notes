@@ -9,13 +9,34 @@ class Node {
     }
 }
 public class TUF {
-    static void postOrderTrav(Node curr, ArrayList < Integer > postOrder) {
-        if (curr == null)
-            return;
+    static ArrayList < Integer > postOrderTrav(Node cur) {
 
-        postOrderTrav(curr.left, postOrder);
-        postOrderTrav(curr.right, postOrder);
-        postOrder.add(curr.data);
+        ArrayList < Integer > postOrder = new ArrayList < > ();
+        if (cur == null) return postOrder;
+
+        Stack < Node > st = new Stack < > ();
+        while (cur != null || !st.isEmpty()) {
+
+            if (cur != null) {
+                st.push(cur);
+                cur = cur.left;
+            } else {
+                Node temp = st.peek().right;
+                if (temp == null) {
+                    temp = st.peek();
+                    st.pop();
+                    postOrder.add(temp.data);
+                    while (!st.isEmpty() && temp == st.peek().right) {
+                        temp = st.peek();
+                        st.pop();
+                        postOrder.add(temp.data);
+                    }
+                } else cur = temp;
+            }
+        }
+        return postOrder;
+
+
     }
 
     public static void main(String args[]) {
@@ -32,7 +53,7 @@ public class TUF {
         root.right.right.right = new Node(10);
 
         ArrayList < Integer > postOrder = new ArrayList < > ();
-        postOrderTrav(root, postOrder);
+        postOrder = postOrderTrav(root);
 
         System.out.println("The postOrder Traversal is : ");
         for (int i = 0; i < postOrder.size(); i++) {
