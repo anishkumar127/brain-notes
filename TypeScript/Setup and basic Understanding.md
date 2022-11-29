@@ -214,3 +214,175 @@ so after making optional it can be a string or undefined
 
 
 
+
+
+so now run and check.
+
+```ts
+type User = {
+
+    name:string;
+
+    age:number;
+
+    address?:string;
+
+}
+
+  
+
+const user:User={
+
+    name:'anish',
+
+    age:24
+
+}
+
+  
+
+console.log(user.name);
+
+console.log(user.address)
+```
+
+output gonna be.
+>anish
+undefined
+
+
+there are address undefined because we and not defining the address in user object. so that's why it is showing the **undefined**.
+
+
+
+# with function and return type.
+
+
+if we define return type :void then its throw error because we  are returning the userData.
+so we have to comment this then error will be gone.
+
+```ts
+function login(userData:User):void{
+
+    return userData;
+
+}
+```
+
+![](https://i.imgur.com/rxebqJn.png)
+
+**void** is by default in typeScript
+
+
+- now set return type as a **User** then it will be ok.
+```ts
+  
+  
+
+function login(userData:User):User{
+
+    return userData;
+
+}
+```
+
+but when we're returning something else like below code. like we are returning the boolean value then it will throw error.
+```ts
+function login(userData:User):User{
+
+    return true;
+
+}
+```
+![](https://i.imgur.com/TM7DFCu.png)
+
+
+if we set blank then its also throw error and show the you should return the User return type value.
+
+like that. 
+![](https://i.imgur.com/IbpvdAL.png)
+
+
+**full code.**
+
+```ts
+  
+
+type User = {
+
+    name:string;
+
+    age:number;
+
+    address?:string;
+
+}
+
+  
+
+const user:User={
+
+    name:'anish',
+
+    age:24
+
+}
+
+  
+  
+
+function login(userData:User):User{
+
+    return userData;
+
+}
+```
+
+
+
+- if we blank function call it will throw error.
+![](https://i.imgur.com/uOzNPi6.png)
+
+
+
+- when pass user object then it will work.
+```ts
+type User = {
+
+    name:string;
+
+    age:number;
+
+    address?:string;
+
+}
+
+  
+
+const user:User={
+
+    name:'anish',
+
+    age:24
+
+}
+
+  
+  
+
+function login(userData:User):User{
+
+    return userData;
+
+}
+
+  
+  
+
+console.log(login(user));
+```
+
+output
+![](https://i.imgur.com/5SmYP2I.png)
+
+
