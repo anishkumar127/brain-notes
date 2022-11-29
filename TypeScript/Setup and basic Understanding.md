@@ -136,3 +136,81 @@ console.log(User.firstName)
 > output will be Anish
 
 - User. will not suggest in JavaScript but if we use over here TypeScript then it will be show suggestion of that User.firstName or lastName role etc. whatever we define in **User** Object.
+
+
+# Type Alias Features in TypeScript
+
+#alias
+  
+
+we use Custom type.
+
+- when use custom type first Letter will be Capital.
+
+- this gonna be object.
+
+- we are creating a shape of object first.
+
+
+```ts
+type User = {
+
+    name:string;
+
+    age:number;
+
+}
+
+const user:User={
+
+    name:'name',
+
+    age:24
+
+}
+```
+
+
+- it will suggest when try to create object.
+
+![](https://i.imgur.com/cdyZOvD.png)
+
+
+
+- above we used name as a **String** but we are putting the value number then typeScript will throw the error.
+like that
+
+![](https://i.imgur.com/b6PsQFH.png)
+
+
+
+- this will auto suggest what we are getting from the object. like what type property we are getting and which property we can use.
+![](https://i.imgur.com/sLaE7mb.png)
+
+
+
+
+# making optional
+
+- we can also use optional property in object using typeScript.
+
+
+```ts
+type User = {
+
+    name:string;
+
+    age:number;
+
+    address?:string;
+
+}
+```
+
+over here we are using **?** symbol making optional the address. 
+so after making optional it can be a string or undefined 
+
+![](https://i.imgur.com/v8kj6tK.png)
+
+
+
