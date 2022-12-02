@@ -40,5 +40,20 @@ console.log(typeof(userId))
 so over there output will be.
 ![](https://i.imgur.com/OFV8QXU.png)
 
-as a String type.
+**as a String type.**
+
+
+# Difference between type and Interface
+
+
+
+1. #type not support duplicate but [[Interfaces]] support duplicate and merge them.
+2. #type use for premitive and interfaces use for objects.
+
+ex.   
+
+    type SanitizedString = string;
+
+    type Numbers = number;
+ - its primitive so we are using type. for object we will use [[Interfaces]] ;
 
