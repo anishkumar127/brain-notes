@@ -40,3 +40,9 @@ Fibonacci branches. and choices first n-1 and then n-2 its has choices and branc
 6. Catalan Number
 7. DP on Grid (2D Arrays)
 
+
+# Main DP Question
+#pattern #dp
+
+![](https://i.imgur.com/2OHj9tK.png)
+![](https://i.imgur.com/tmgxCEc.png)
