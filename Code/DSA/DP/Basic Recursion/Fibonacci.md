@@ -73,23 +73,3 @@ above code what we are doing. we just storing the call or calculated or visited.
 its called DP and storing called memorization
 
 
-
-## What is DP ?
-DP is optimized recursion
-
-## How to identify DP?
-a. Optimal Problem
-b. some choice is given (multiple branches in recursion tree)
-
-
-## Greedy #identify
-
-#greedy
-
-1. least
-2. most
-3. min
-4. max
-5. largest
-6. smallest
-
