@@ -7,7 +7,7 @@ Screenshot
 ![](https://i.imgur.com/wooWwKB.png)
 
 
-Render API also stopped working. -> https://api-server-1edp.onrender.com/
+Render API also stopped working. -> https://api-server-1edp.onrender.com/ but after redeploy its started working again.
 
 Screenshots 
 
