@@ -155,6 +155,10 @@ localhost:8800/api/videos/tags?tags=py
 localhost:5000/api/videos/random
 ```
 
+and live hosted API link 
+```http
+https://agreeable-bat-gown.cyclic.app/api/videos/random
+```
 
 6. subscribed channel video
 
