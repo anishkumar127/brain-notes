@@ -832,3 +832,120 @@ app.post("/login", async (req, res) => {
 # Note -> Some mistake i did .
 1. i did statusCode its will give error. so for that we have to use.
 2. status() method. above method statusCode() is wrong.
+
+
+# Thuder Client long URL shorting.
+using env variable
+
+![](https://i.imgur.com/3r1VQn2.png)
+
+
+and then do post request
+
+![](https://i.imgur.com/ukYxW6n.png)
+
+
+URL visibility should be public in codespaces terminal
+
+# add middleware
+
+folder middleware and inside auth.js
+
+```js
+const jwt = require("jsonwebtoken");
+
+  
+
+const auth = (req, res, next) => {
+
+  // grab token from cookie
+
+  console.log(req.cookies);
+
+  const { token } = req.cookies;
+
+  // if no token , stop there,
+
+  if (!token) {
+
+    res.status(403).send("Please login first!");
+
+  }
+
+  // decode that token and get id
+
+  try {
+
+    const decode = jwt.verify(token, "jksklslse23");
+
+    req.user = decode;
+
+    console.log(decode);
+
+  } catch (err) {
+
+    console.log(err);
+
+    res.status(401).send("Invalid Token");
+
+  }
+
+  // query to DB for that user id
+
+  return next();
+
+};
+
+  
+
+module.exports = auth;
+```
+
+
+# FULL Code  [[Auth]]
+[Auth]([[Auth]])
+Repository -> [auth](https://github.com/anishkumar127/auth-mongodb-express)
+
+
+# now Testing API
+
+# 1. Register API
+
+```http
+{{URL}}/register
+```
+
+```JSON
+{
+  "firstName":"anish",
+  "lastName":"bishnoi",
+  "email":"anish@gmail.com",
+  "password":"test1"
+}
+```
+![](https://i.imgur.com/4ZecBAP.png)
+
+
+# 2. Login API
+
+```http
+{{URL}}/login
+```
+
+```JSON
+{
+  "email":"anish@gmail.com",
+  "password":"test1"
+}
+```
+
+![](https://i.imgur.com/HgBgx2N.png)
+
+
+# 3. Dashboard
+
+1. working auth middleware
+
+![](https://i.imgur.com/ky0tA1b.png)
+
+
