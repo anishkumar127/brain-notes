@@ -6,20 +6,22 @@
 https://api-server-1edp.onrender.com/api/videos/random
 ```
 
+![](https://i.imgur.com/ytBIGG3.png)
 
-![[Pasted image 20221118092134.png]]
+
 
 
 # Name 
 - website name anything but meaningful 
 
-![[Pasted image 20221118092204.png]]
+![](https://i.imgur.com/dEbOUyj.png)
+
 
 # Build & Deploy
 
 
 ## Branch 
-- Repostory Branch Name
+- Repository Branch Name
 
 
 ## Root Directory 
@@ -28,7 +30,8 @@ https://api-server-1edp.onrender.com/api/videos/random
 
 - otherwise skip it blank
 
-![[Pasted image 20221118092413.png]]
+![](https://i.imgur.com/nbDoYSS.png)
+
 
 # Build Command
 - yarn 
