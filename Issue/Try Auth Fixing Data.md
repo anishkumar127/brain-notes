@@ -85,3 +85,51 @@ https://github.com/safak/youtube2022/blob/mern-booking/api/controllers/auth.js
 
 https://github.com/safak/youtube2022/blob/mern-booking/client/src/context/AuthContext.js
 
+
+
+
+
+# Pending.
+
+[ ] do comments. 
+  delete comments
+  edit comments
+
+
+change profile pic.  
+add profile pic while signup
+
+fix auth
+
+delete video
+edit video
+
+updateUser, userName or email update.
+
+forget password.
+signup mail.
+
+
+sign in auth fixed but have to look it to access.
+
+redux toolkit issue fix.
+
+UI need to fix.
+
+search bar fix. ui on enter search
+
+
+sign in via email and password. not username
+
+
+erorr handling in front end.
+form error handling.
+wrong login error handling.
+
+other issue error handling.
+
+
+
+404 page design.
+
+
