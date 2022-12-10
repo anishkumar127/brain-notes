@@ -382,3 +382,6 @@ local storage not lost data into the browser or tab if its close . it will delet
 </html>
 ```
 
+https://stackblitz.com/edit/vitejs-vite-sa54mc?file=src%2FApp.jsx&terminal=dev
+
+https://stackblitz.com/edit/web-platform-wwmh5q?file=index.html,styles.css
