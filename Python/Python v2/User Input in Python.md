@@ -51,3 +51,12 @@ so why this ?
 
 because of input take as a string. so if we put anything it will take as a string. we have to do typecast
 
+so here is example to typecast and then result will be 30.
+
+```python
+x=input();
+y = input();
+print(int(x)+int(y));
+```
+output -> 30 , input is 10 and 20.
+
