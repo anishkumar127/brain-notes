@@ -37,6 +37,17 @@ b
 c
 null
 
+Time Complexit  -  O(n * 2^n)
+Sc - O(n);
+
+![](https://i.imgur.com/2kK4wel.png)
+
+
+![](https://i.imgur.com/l0RAUGp.png)
+
+
+
+//////////////////
 
 diagrams.
 ![](https://i.imgur.com/5UvEI9x.png)

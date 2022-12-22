@@ -53,6 +53,83 @@ class Solution
 }
 ```
 
+
+
+# Another
+
+
+```java
+public List<String> AllPossibleStrings(String str1){
+        List<String>list=new ArrayList<>();
+        String st="";
+        betterString(str1, st, list);
+        Collections.sort(list);
+        return list;
+    }
+    public static void betterString(String str1,String st, List<String>list) {
+        if(str1.length()==0){
+            if(st.length()>0){list.add(st);}
+            return;}
+        betterString(str1.substring(1), st+str1.charAt(0),list);
+        betterString(str1.substring(1),st,list);
+    }
+```
+```java
+class Solution
+
+{
+
+    public List<String> AllPossibleStrings(String s)
+
+    {
+
+        String out="";
+
+        List<String> ans=new ArrayList<String>();
+
+        solve(s,out,ans);
+
+        ans.remove("");
+
+    Collections.sort(ans);
+
+    return ans;
+
+    }
+
+    // helper function
+
+    public static void solve(String input ,String output,List<String> ans){
+
+       // base case
+
+        if(input.length()==0){
+
+        ans.add(output);
+
+        return;}
+
+        String out1=output;
+
+        String out2=output;
+
+        out2+=input.charAt(0);
+
+        input=input.substring(1);
+
+        solve( input,out1,ans);
+
+        solve( input,out2,ans);
+
+    }
+
+}
+```
+
+
+
+
+
 Given a string S, Find all the possible subsequences of the String in lexicographically-sorted order.
 
 **Example 1:**
