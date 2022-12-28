@@ -26,6 +26,9 @@ public class Main {
 
 output - 6.
 
+tc- too high complexity. its greater then n^2 
+
+![](https://i.imgur.com/O7YV3rI.png)
 
 
 
@@ -40,3 +43,32 @@ quetisons.
 
 ![](https://i.imgur.com/FDmu33R.png)
 ![](https://i.imgur.com/0OtOg2i.png)
+
+
+
+# Another Ways using Permutations
+
+
+```java
+
+```
+
+
+
+
+
+![](https://i.imgur.com/6H8Hdjh.png)
+
+
+![](https://i.imgur.com/kz2nwZJ.png)
+![](https://i.imgur.com/L2b4loz.png)
+
+
+![](https://i.imgur.com/NeYpkT5.png)
+
+
+![](https://i.imgur.com/ybwcOht.png)
+
+
+
+![](https://i.imgur.com/0avjhlw.png)
