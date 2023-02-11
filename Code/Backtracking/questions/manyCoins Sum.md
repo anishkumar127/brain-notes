@@ -26,5 +26,5 @@ public class manyCoins {
 }
 ```
 
-just the difference is don't increase the index. just do the same elements choose many times.
+**just the difference is don't increase the index. just do the same elements choose many times.
 
