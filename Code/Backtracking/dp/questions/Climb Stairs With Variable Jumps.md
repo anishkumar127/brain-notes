@@ -77,6 +77,51 @@ public class Main {
     }
 }
 ```
+
+# Tabulation
+
+```java
+import java.util.*;
+
+class Solution {
+    public int stairWays(int[] jump) {
+        //Write code here
+		int n = jump.length;
+		int dp[] = new int[n+1];
+		return tabulation(0, jump,dp);
+    }
+	private int tabulation(int idx, int [] arr, int [] dp){
+		for(idx = arr.length; idx>=0; idx--){
+			if(idx==arr.length){
+			 dp[idx] = 1;
+				continue;
+		}
+		int ans = 0;
+		for(int jump = 1; jump<=arr[idx]; jump++){
+			if(idx+jump <=arr.length){
+				ans+=dp[idx+jump];
+			}
+		}
+		dp[idx] = ans;
+		}
+		return dp[0];
+	}
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
+        Solution Obj = new Solution();
+        int res = Obj.stairWays(arr);
+        System.out.println(res);
+        sc.close();
+    }
+}
+```
 ![](https://i.imgur.com/8i2S9d8.png)
 
 
