@@ -134,6 +134,12 @@ public class Main {
 -
 ![](https://i.imgur.com/AHtSKis.png)
 
+![](https://i.imgur.com/6wQX82s.png)
+
+![](https://i.imgur.com/fhnMIQh.png)
+
+
+![](https://i.imgur.com/USVuycZ.png)
 
 # Climb Stairs With Variable Jumps
 
