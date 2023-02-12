@@ -187,3 +187,19 @@ public class Febo {
     }  
 }
 ```
+
+## most optimized Fibonacci series
+
+```java
+private static int febo_most_optimized(int n){  
+    int first_term = 0;  
+    int second_term = 1;  
+    int third_term = first_term + second_term;  
+    for(int i=2; i<=n; i++){  
+        third_term = first_term + second_term;  
+        first_term  = second_term ;  
+        second_term = third_term ;  
+    }  
+    return  third_term;  
+}
+```
