@@ -45,3 +45,141 @@
 
 
 
+**next**
+![](https://i.imgur.com/aqfar9i.png)
+
+
+
+
+
+
+![](https://i.imgur.com/SbF28Yr.png)
+
+
+
+
+
+# by Recursion
+
+```java
+package DP_Questions.VariableJump;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        int n =6;  
+        int[] arr ={ 3 ,3, 0, 2, 2, 3};  
+        int[] dp = new int[n+1];  
+        System.out.println(recur(arr,0));  
+    }  
+    private static int recur(int[] jump , int idx){  
+        if(idx==jump.length) return 1;  // 1 jump possible.  
+        int ans = 0;  
+        for(int i=1; i<=jump[idx]; i++){  
+            if(i+idx<=jump.length){  
+                ans+=recur(jump,i+idx);  
+            }  
+        }  
+        return ans;  
+    }  
+}
+```
+
+**another way**
+
+```java
+package DP_Questions.VariableJump;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        int n =6;  
+        int[] arr ={ 3 ,3, 0, 2, 2, 3};  
+        int[] dp = new int[n+1];  
+        System.out.println(recur(arr,0));  
+    }  
+    private static int recur(int[] jump , int idx){  
+        if(idx==jump.length) return 1;  // 1 jump possible.  
+        int ans = 0;  
+        for(int i=1; i<=jump[idx] && i+idx<=jump.length; i++){  
+                ans+=recur(jump,i+idx);  
+        }  
+        return ans;  
+    }  
+}
+```
+
+**output:- 8**
+
+
+# dp memo
+
+```js
+package DP_Questions.VariableJump;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        int n =6;  
+        int[] arr ={ 3 ,3, 0, 2, 2, 3};  
+        int[] dp = new int[n+1];  
+        System.out.println(memoWay(arr,0,dp));  
+    }  
+    // Memorization  
+    private static int memoWay(int[]jump , int idx, int[] dp){  
+        if(idx==jump.length) return dp[idx] = 1;  
+        int ans = 0;  
+        if(dp[idx]!=0) return dp[idx];  
+        for(int i=1; i<=jump[idx] && i+idx<=jump.length; i++){  
+            ans+=memoWay(jump,i+idx,dp);  
+            dp[idx] = ans;  
+        }  
+        return ans;  
+    }  
+}
+```
+
+**another way**
+
+```java
+ass Solution {
+    public int stairWays(int[] jump) {
+        //Write code here
+		int n= jump.length;
+		        int[] dp = new int[n+1];
+       return memoWay(jump,0,dp);
+    }
+	private  int memoWay(int[]jump , int idx, int[] dp){
+        if(idx==jump.length) return 1;
+        int ans = 0;
+        if(dp[idx]!=0) return dp[idx];
+        for(int i=1; i<=jump[idx] && i+idx<=jump.length; i++){
+            ans+=memoWay(jump,i+idx,dp);
+        }
+        return  dp[idx] = ans;
+    }
+```
+
+
+# tabulation
+**need to know**
+**dp array will be n+1 because 0 index will store the answer becuase start iterating from backswords.**
+**start from recursion base case. where base case hit on recursion where our tabulation will start**
+**instead of function name we  will put dp**
+**put first base case value into dp and then continue.**
+
+****
+```java
+private static int tabulation(int[] jump, int[] dp){  
+    for(int idx=jump.length; idx>=0; idx--){  
+        if(idx==jump.length)  
+        {  
+            dp[idx] = 1;  
+            continue;  
+        }  
+        int ans = 0;  
+        for(int i=1; i<=jump[idx] && i+idx<=jump.length; i++){  
+            ans+= dp[idx+i]; //memoWay(jump,i+idx,dp);  
+        }  
+        dp[idx] = ans;  
+    }  
+    return dp[0];  
+}
+```
