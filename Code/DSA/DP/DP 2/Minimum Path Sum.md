@@ -214,3 +214,11 @@ private static int pathSum(int[][] m , int i, int j, int [][]dp){
 ![](https://i.imgur.com/K6prTwi.png)
 
 
+![](https://i.imgur.com/cdldEpf.png)
+
+
+# Space optimization using same matrix.
+
+![](https://i.imgur.com/JAtL12E.png)
+
+
