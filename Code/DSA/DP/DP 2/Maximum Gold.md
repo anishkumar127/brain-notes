@@ -174,3 +174,71 @@ public class Main {
 ```
 
 
+# Tabulation
+
+## Approach
+
+Create a 2-D matrix goldTable[][]) of the same as given matrix mat[][]. If we observe the question closely, we can notice following.
+
+1.  Amount of gold is positive, so we would like to cover maximum cells of maximum values under given constraints.
+    
+2.  In every move, we move one step toward right side. So we always end up in last column. If we are at the last column, then we are unable to move right
+    
+
+If we are at the first row or last column, then we are unable to move right-up so just assign 0 otherwise assign the value of goldTable[row-1][col+1] to right_up. If we are at the last row or last column, then we are unable to move right down so just assign 0 otherwise assign the value of goldTable[row+1][col+1] to right up.
+
+Now find the maximum of right, right_up, and right_down and then add it with that mat[row][col]. At last, find the maximum of all rows and first column and return it.
+
+**Time Complexity**
+
+O(N*M)
+
+**Space Complexity**
+
+O(N*M)
+
+Below is the implementation of above idea:
+
+**1. Java**
+
+```java
+import java.io.*;
+import java.util.*;
+
+class Main{
+    public static void main(String args[])throws IOException
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int M[][] = new int[n][m];
+        for(int i = 0;i < n*m;i++){
+            M[i/m][i%m] = sc.nextInt();
+        }
+        
+        Solution ob = new Solution();
+        System.out.println(ob.maxGold(n, m, M));
+    }
+} 
+
+class Solution{
+    static int maxGold(int n, int m, int M[][])
+    {
+        int[][] dp = new int[n+2][m+2];
+        
+        for(int j = 1 ; j <= m ; j++){
+            for(int i = 1 ; i <= n ; i++){
+                dp[i][j] = M[i-1][j-1] + 
+                Math.max(dp[i-1][j-1], Math.max(dp[i][j-1], dp[i+1][j-1]));
+            }
+        }
+        int ans = 0;
+        for(int i = 1 ; i <= n ; i++){
+            ans = Math.max(ans, dp[i][m]);
+        }
+        
+        return ans;
+    }   
+}
+```
+
