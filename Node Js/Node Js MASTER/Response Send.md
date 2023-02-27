@@ -447,3 +447,90 @@ server.listen(3000);
 
 **because above if statement block will run in future and then after below code run and that's will throw the error.**
 
+![](https://i.imgur.com/U4qirpu.png)
+
+
+
+**so avoid issue we will return res.on then it will not run below code**
+
+```js
+const http = require("http");
+
+const fs = require("fs");
+
+const server = http.createServer((req, res) => {
+
+  const url = req.url;
+
+  const method = req.method;
+
+  if (url === "/") {
+
+    res.write("<html>");
+
+    res.write("<head><title>This is title</title></head>");
+
+    res.write(
+
+      "<body><form method='POST' action='/message'><input type='text' name='myMessage'/><button type='submit'>Submit</button></form></body>"
+
+    );
+
+    res.write("</html>");
+
+    return res.end();
+
+  }
+
+  
+
+  if (url === "/message" && method === "POST") {
+
+    const body = []; // const because not want to reassign.
+
+    req.on("data", (chunk) => {
+
+      console.log(chunk);
+
+      body.push(chunk);
+
+    });
+
+    return req.on("end", () => {
+
+      const parsedBody = Buffer.concat(body).toString();
+
+      const message = parsedBody.split("=")[1];
+
+      fs.writeFileSync("myMsg.text", message);
+
+      res.statusCode = 302;
+
+      res.setHeader("Location", "/");
+
+      return res.end();
+
+    });
+
+  }
+
+  res.setHeader("Content-Type", "text/html");
+
+  res.write("<html>");
+
+  res.write("<head><title>This is title</title></head>");
+
+  res.write("<body><h1>hey anish! Have a Good day</h1></body>");
+
+  res.write("</html>");
+
+  res.end();
+
+});
+
+  
+
+server.listen(3000);
+```
+
+
