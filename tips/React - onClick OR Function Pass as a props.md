@@ -508,6 +508,50 @@ export default ButtonChild;
 
 **and its let because const not change value.**
 
+**but we can do using cost just add into not assign**
+
+```js
+import React, { useState } from "react";
+
+  
+
+const ButtonChild = ({ message, children, onPlay, onPause }) => {
+
+  const [PlayStatus, setPlayStatus] = useState(false);
+
+  const handleClick = (e) => {
+
+    e.stopPropagation();
+
+    if (PlayStatus) onPause();
+
+    else onPlay();
+
+  
+
+    setPlayStatus(!PlayStatus);
+
+  };
+
+  return (
+
+    <button onClick={handleClick}>
+
+      {" "}
+
+      {children} - {PlayStatus ? "Pause" : "Play"}
+
+    </button>
+
+  );
+
+};
+
+  
+
+export default ButtonChild;
+```
+
 # next other things
 
 **children**
