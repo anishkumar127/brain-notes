@@ -71,3 +71,22 @@
 ![](https://i.imgur.com/eiQYNgH.png)
 
 
+
+
+# next
+![](https://i.imgur.com/8on4uI9.png)
+
+
+
+**now there is a issue**
+**when we do add video. all components re re render like app , button , video etc.**
+**but we do only one another data to add to array its should not re render the all components again.**
+
+**so there all things are inside app components our array inside app js and video components and button components so there is case all things also re render because of app components re render **
+
+**so here we need to optimization**
+
+
+
+
+
