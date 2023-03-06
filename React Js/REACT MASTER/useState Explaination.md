@@ -52,3 +52,21 @@
 
 ![](https://i.imgur.com/ejvOpex.png)
 
+
+
+# NEXT
+
+**react always don't want to directly change the state.**
+**if we do then it will not change the state. and not visible to ui**
+
+**react always want to make a copy and that copy will become the new state.**
+**so always try to make copy and then that copy add to state.**
+![](https://i.imgur.com/CTk7Ule.png)
+
+
+**above pic we directly pushing to state and it will not rerender the ui and state will not change.**
+
+
+**so we do this way we make a copy using spread operator ... and then add new item into this.**
+<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20230306221603.png]]
