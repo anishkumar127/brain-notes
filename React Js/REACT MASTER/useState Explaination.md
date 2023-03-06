@@ -68,5 +68,6 @@
 
 
 **so we do this way we make a copy using spread operator ... and then add new item into this.**
-<!--⚠️Imgur upload failed, check dev console-->
-![[Pasted image 20230306221603.png]]
+![](https://i.imgur.com/eiQYNgH.png)
+
+
