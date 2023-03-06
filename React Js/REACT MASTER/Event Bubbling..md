@@ -59,3 +59,6 @@ const ButtonChild = ({ message, children, onPlay, onPause }) => {
 export default ButtonChild;
 ```
 
+**e.preventDefault() remove the default behavior of form.**
+
+
