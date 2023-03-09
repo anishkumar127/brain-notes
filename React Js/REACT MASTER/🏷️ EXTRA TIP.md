@@ -34,3 +34,11 @@
 
 
 **button.className inside that button class only apply**
+
+# React Switch Package
+
+https://www.npmjs.com/package/react-switch
+
+https://react-switch.netlify.app/
+
+https://github.com/markusenglund/react-switch
