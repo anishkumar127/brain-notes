@@ -28,3 +28,9 @@
 ![](https://i.imgur.com/gtpcfKE.png)
 
 
+# CSS TIPS
+
+![](https://i.imgur.com/4uCbcQo.png)
+
+
+**button.className inside that button class only apply**
