@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bgcolor {
+        background-color: gray;
+        width: 60px;
+        height: 34px;
+        border-radius: 25%;
+        position: relative;
+        transition: background-color 4s;
+    }
+
+    .bg-color2 {
+        background-color: green;
+        display: none;
+    }
+
+    .bg-color2 .bgcolor:hover {
+        display: block;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 7px;
+        left: 4px;
+        right: 0px;
+        transition: left 4s, right 4s;
+    }
+
+    .bgcolor .circle:hover {
+        left: auto;
+        right: 4px;
+        transition: right 3s;
+    }
+
+    .bgcolor:hover {
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="bg-color2"></div>
+    <div class="bgcolor">
+        <span class="circle"></span>
+    </div>
+</body>
+
+</html>

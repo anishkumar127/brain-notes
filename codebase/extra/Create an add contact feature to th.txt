@@ -1,0 +1,9 @@
+Create an add contact feature to the phone book using react as shown below:https://cdn.acciojob.com/media/frontend4_mock/frontend4_mock_phonebook.png Requirements: Create two input fields to take name and phone number as inputSet validations on input fieldsName field cannot be emptyPhone field cannot be empty and it should take 10 digits as inputOn click of “Add Contact” button add the contact details under contact heading
+
+
+https://cdn.acciojob.com/media/frontend4_mock/frontend4_mock_routing.gif
+
+
+https://storage.googleapis.com/accio-digital-ocean-data/media/frontend4_mock/frontend4_mock_phonebook.png
+
+https://storage.googleapis.com/accio-digital-ocean-data/media/frontend4_mock/frontend4_mock_routing.gif
