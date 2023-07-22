@@ -1,0 +1,25 @@
+Create a toggle switch using HTML and CSS as shown below Constraints: 1. Width 60px 2. Height 34px UI reference: https://cdn.acciojob.com/media/frontend1mock/frontend1_mock_toggle.gif
+
+https://cdn.acciojob.com/media/frontend1mock/frontend1_mock_grid.png
+
+////
+
+Create a responsive grid in HTML/CSS that will display a set of 9 images in 3 rows and 3 columns that fits the page using both flex and grid. Design as shown in the image: https://cdn.acciojob.com/media/frontend1mock/frontend1_mock_grid.png Playground for flex: https://githubbox.com/acciojob/frontend1_mock_flex Playground for grid: https://githubbox.com/acciojob/frontend1_mock_grid
+
+
+///
+https://codesandbox.io/s/nostalgic-nash-w7ec4o?file=/index.html:304-305
+
+https://codesandbox.io/s/github/acciojob/frontend1_mock_flex
+
+//
+
+https://w7ec4o.csb.app/
+
+https://cdn.acciojob.com/media/frontend1mock/frontend1_mock_toggle.gif
+
+///
+
+Create a responsive grid in HTML/CSS that will display a set of 9 images in 3 rows and 3 columns that fits the page using both flex and grid. Design as shown in the image: https://cdn.acciojob.com/media/frontend1mock/frontend1_mock_grid.png Playground for flex: https://githubbox.com/acciojob/frontend1_mock_flex Playground for grid: https://githubbox.com/acciojob/frontend1_mock_grid
+
+

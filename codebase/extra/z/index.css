@@ -1,0 +1,31 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.sidebar {
+    background: #DFD6C5;
+    border-radius: 30px;
+}
+
+.horizontal-color-green {
+    background: #8E886D;
+    border-radius: 30px;
+}
+
+.horizontal-color-purple {
+
+    background: #916E58;
+    border-radius: 30px;
+}
+
+.horizontal-color-gray {
+
+    background: #B1A48E;
+    border-radius: 30px;
+}
