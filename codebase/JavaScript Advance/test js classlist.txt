@@ -1,0 +1,60 @@
+var navList = document.getElementById("nav-list");
+
+function visible(){
+    navList.classList.add('nav-style-visible');
+}
+
+function clicked (){
+    var hamburger = document.getElementById('hamburger_visible').onclick = function(){
+        visible();
+     }
+}
+
+function Hide() {
+    navList.classList.remove("nav-style-visible");
+  
+  }
+
+  function visibleBurger () {
+//     var element = document.getElementById("nav-list");
+  
+//    li.appendChild(  element.classList.add("nav-style-visible"))
+//    ul.appendChild(li);
+// const list = document.querySelectorAll('li');
+// var list = document.getElementById("nav-list");
+// var list = document.getElementsByClassName('nav-style')
+
+      list.classList.add('nav-style-visible');
+
+  }
+
+
+
+  function toggle() {
+    var element = document.querySelectorAll(".hide");
+    element.classList.remove("nav-style-visible");
+  }
+
+
+
+  // save 
+
+  function toggle () {
+    const x = document.getElementById("nav-list")
+    console.log(x);
+    // const element = document.querySelectorAll('.nav-style-visible');
+    const t = document.getElementById('try');
+    console.log(t.classList.remove("nav-style-visible"));
+
+
+    // t.classList.forEach((a,b)=>{
+    //     console.log(a,b);
+    // })
+    // if(t.style.display==='block'){
+    //     console.log("hey")
+    //     t.style.display="none";
+    // }else{
+    //     console.log("Hey2");
+    //     t.style.display="block";
+    // }
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Jumper-box-style {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+      }
+      .Jumping-box-style {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: 30s;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-between">
+      <div id="Jumper" class="Jumper-box-style" onclick="handleClick()"></div>
+
+      <div id="Jumping" class="Jumping-box-style"></div>
+    </div>
+  </body>
+  <script>
+    let a = document.querySelector("#Jumping");
+    function handleClick() {
+      if (a.getAttribute("style")) {
+        a.removeAttribute("style");
+      } else {
+        let b = parseInt(Math.random() * 100 + 1);
+        let c = parseInt(Math.random() * 100 + 1);
+
+        a.setAttribute("style", `bottom: ${b}00px; right:${c}00px `);
+      }
+    }
+  </script>
+</html>
