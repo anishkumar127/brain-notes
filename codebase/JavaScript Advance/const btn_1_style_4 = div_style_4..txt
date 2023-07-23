@@ -1,0 +1,11 @@
+// const btn_1_style_4 = div_style_4.appendChild(cElement("button"));
+// btn_1_style_4.classList.add("text-bg-color-white", "text-color-black");
+// btn_1_style_4.classList.add("p-cart-btn-padding");
+// btn_1_style_4.innerText = "Try It";
+
+// BUTTON 2
+
+// const btn_2_style_4 = div_style_4.appendChild(cElement("button"));
+// btn_2_style_4.classList.add("text-bg-color-purple", "text-bg-color-white");
+// btn_2_style_4.classList.add("p-cart-btn-padding");
+// btn_2_style_4.innerText = "Buy Now";
