@@ -62,3 +62,46 @@ a===b // false.
 
 ![](https://i.imgur.com/yxzSdg5.png)
 
+# Next
+
+# Not Sync 
+
+![](https://i.imgur.com/0jkxVSF.png)
+
+
+- whenever state change useeefect set counter in setnumber
+- and time visible like 51 - 53 - 56 ettc.
+
+# resolve
+
+*we need cleanup function*
+
+![](https://i.imgur.com/6Xvb1Np.png)
+
+# Network calls
+
+![](https://i.imgur.com/91U8RP6.png)
+
+- move one components to another or one route to another route. api calls not stop and set data. even different route moved still set data & fetch calls
+# avoid issue
+
+![](https://i.imgur.com/OmFdWs5.png)
+
+- cleanup function needed
+-  but api still calling but data set stopped
+## avoid api calls 
+
+![](https://i.imgur.com/FZpkFZy.png)
+![](https://i.imgur.com/ZMigF9X.png)
+
+
+### with axios
+
+![](https://i.imgur.com/R3UwX3U.png)
+![](https://i.imgur.com/vqOPAZ6.png)
+![](https://i.imgur.com/obeAVcf.png)
+
+- so axios also give the object and that's object is cancel.token. and that's we can get from source().
+
+- this help to abort the api calls , unnecessary too many api calls between changing the route.
+
