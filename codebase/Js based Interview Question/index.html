@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label>Input Your Name</label>
+    <input type="text" id="name" >
+    <button onclick="handleSubmit(event)">Submit</button>
+    <p class="test">Hi there, </p>
+    <script>
+        let  getText = document.getElementById("name")
+        console.log(getText);
+            let res = ""
+     getText.addEventListener("click",function(event){
+        console.log(event.target.value);
+        res = event.target.value;
+        })
+        function handleSubmit(event){
+            let Display = document.querySelector(".test");
+            console.log(res);
+            Display.innerText="Hi there, "+res;
+        }
+
+    </script>
+</body>
+</html>
